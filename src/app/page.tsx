@@ -34,15 +34,15 @@ export default function Home() {
         </div >
       </div>
 
-      <nav className="text-center p-2">
-        <ul className="hidden md:flex items-center px-15 py-2 justify-between font-grotesk font-normal">
+      <nav className="text-center p-4">
+        <ul className="hidden md:flex items-center px-15 justify-between font-grotesk font-normal">
           <li className="text-lg font-semibold cursor-pointer">Home</li>
           <li className="text-lg font-semibold cursor-pointer">About</li>
           <li className="text-lg font-semibold cursor-pointer">Projects</li>
           <li className="text-lg font-semibold cursor-pointer">Contact</li>
         </ul>
 
-         <span onClick={()=>{setOpenNav(true)}} className="text-xl md:hidden font-semibold font-grotesk">Menue</span>
+         <span onClick={()=>{setOpenNav(true)}} className="text-2xl md:hidden font-semibold pt-4 font-grotesk">Menue</span>
       </nav>
 
 
