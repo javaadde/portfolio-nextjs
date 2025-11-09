@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from "react";
+import TypingAnimation from "@/components/TypingText";
 
 export default function Home() {
 
@@ -8,9 +9,12 @@ export default function Home() {
   const [openNav,setOpenNav]  = useState(false);
 
   return (
-    <div className="h-screen w-full relative">
+    <div>
 
-      <div className={`fixed top-0 left-0 h-screen w-full bg-[#404CD6] shadow-2xl z-50 md:hidden transform transition-transform duration-300 ease-in-out ${
+     <section className="h-screen w-full relative">
+
+
+      <div className={`fixed text-[#FBF4E6] top-0 left-0 h-screen w-full bg-[#404CD6] shadow-2xl z-50 md:hidden transform transition-transform duration-300 ease-in-out ${
            openNav ? 'translate-x-0' : 'translate-x-full'
           }`}>
 
@@ -46,9 +50,7 @@ export default function Home() {
       <main className="flex flex-col items-center justify-center mt-20">
         <h1 className="md:text-9xl text-6xl font-silkscreen">JAVAD</h1>
 
-        <p className="font-jetbrains mt-20  w-35 text-center">
-          CRAFTING DIGITAL EXPERIENCES THAT MATTERS
-        </p>
+        <TypingAnimation />
       </main>
 
       <div className="w-55 p-2 inline absolute bottom-0 left-0 ">
@@ -56,6 +58,16 @@ export default function Home() {
       </div>
 
           <div className="md:w-20 md:h-20 h-18 w-18 cursor-pointer font-jetbrains absolute bottom-5 right-5 rounded-full bg-[#404cd6] text-center"> <p className="p-4">LETS,<br/>TALK</p> </div>
+
+
+     </section>
+
+
+{/* 
+     <section className="h-screen w-full">
+
+     </section> */}
+
 
     </div>
   );
