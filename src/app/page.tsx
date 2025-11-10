@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import TypingAnimation from "@/components/TypingText";
+import Link from "next/link";
+import SlidingSkills from "@/components/SlidingSkills"; 
 
 export default function Home() {
 
@@ -42,7 +44,7 @@ export default function Home() {
           <li className="text-lg font-semibold cursor-pointer">Contact</li>
         </ul>
 
-         <span onClick={()=>{setOpenNav(true)}} className="text-2xl md:hidden font-semibold pt-4 font-grotesk">Menue</span>
+         <span onClick={()=>{setOpenNav(true)}} className="text-2xl md:hidden font-semibold font-grotesk">Menue</span>
       </nav>
 
 
@@ -53,7 +55,7 @@ export default function Home() {
         <TypingAnimation />
       </main>
 
-      <div className="w-55 p-2 inline absolute bottom-0 left-0 ">
+      <div className="w-55 p-2 ml-4 inline absolute bottom-0 left-0 ">
         <p className="font-jetbrains">CRIATIVE AND DEVELOPMENT TO TECH AND CULTURAL CHANGEMAKING</p>
       </div>
 
@@ -63,10 +65,28 @@ export default function Home() {
      </section>
 
 
-{/* 
-     <section className="h-screen w-full">
 
-     </section> */}
+     <section className="h-screen w-full flex md:flex-row flex-col md:items-center justify-center">
+
+      <main className="md:p-12 p-8 md:pl-15 md:pt-15  flex md:flex-row  flex-col md:items-center justify-center">
+        <h1 className="md:text-9xl font-grotesk text-5xl">
+          Building <br /> with <br /> Purpose
+        </h1>
+        <p className="md:text-xl text-lg md:w-1/2  md:-translate-x-50 mt-10 font-jetbrains">Whether designing UI, prototyping flows, or engineering full-stack apps, I help transform ideas into real products</p>
+      </main>
+ 
+       <div className="md:px-12 px-8 mt-8 ">
+          <Link href="#" className="font-jetbrains px-22 py-3 rounded-full bg-[#404CD6] ">
+             About&nbsp;Me&nbsp;&rarr; 
+          </Link>
+       </div>
+   
+     </section>
+
+
+     <section >
+      <SlidingSkills />
+     </section>
 
 
     </div>
