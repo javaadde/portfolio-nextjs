@@ -124,7 +124,7 @@ export default function Home() {
 
 
 
-      <footer className="bg-black text-[#FBF4E6] py-20 px-6 md:px-12">
+      <footer className="py-20 px-6 md:px-12">
         <div className="flex flex-col md:flex-row justify-center md:items-end mb-20 md:gap-30 gap-10">
 
           {/* Sections Links */}
