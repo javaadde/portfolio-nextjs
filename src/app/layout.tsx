@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Portfolio",
-  description: "my portfolio website",
+  title: "javadde",
+  description: "portfolio website javad vadakkangara",
 };
 
 export default function RootLayout({
@@ -25,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/logo.png" />
+        <link rel="icon" href="/logo.png" type="image/png" />
         <link
           href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap"
           rel="stylesheet"

@@ -10,14 +10,6 @@ export default function SlidingSkills() {
       ]
     },
     {
-      name: 'Vite',
-      viewBox: '0 0 32 32',
-      paths: [
-        { d: 'M29.956 1.258l-2.065.88-12.01 28.59L3.89 2.138l-2.065-.88L.5 2.5l15.38 30.76L31.28 2.5l-1.324-1.242z', fill: '#FFC61E' },
-        { d: 'M15.88 33.26L.5 2.5l1.325-1.242 2.065.88L15.88 33.26z', fill: '#BD34FE' }
-      ]
-    },
-    {
       name: 'Postman',
       viewBox: '0 0 24 24',
       paths: [
