@@ -155,7 +155,7 @@ export default function Home() {
         </div>
 
         <div className="text-center md:text-left border-t border-gray-800 pt-10 flex flex-col md:flex-row justify-between items-center">
-          <div className="md:border-r border-b border-gray-800 h-full md:p-12 p-6 w-3/4 text-center ">
+          <div className="md:border-r md:border-b-0 border-b border-gray-800 h-full md:p-12 p-6 w-3/4 text-center ">
             <h1 className="text-4xl md:text-[8rem] font-silkscreen md:mb-0">JAVAD</h1>
           </div>
           <div className="flex items-center justify-center text-center md:w-1/4 w-full pt-6 md:pt-0">
