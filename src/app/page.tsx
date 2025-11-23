@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import TypingAnimation from "@/components/TypingText";
 import Link from "next/link";
 import SlidingSkills from "@/components/SlidingSkills";
@@ -9,6 +9,22 @@ export default function Home() {
 
 
   const [openNav, setOpenNav] = useState(false);
+  const [rotation, setRotation] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      // Rotate 360 degrees for every 1000px scrolled
+      const newRotation = (scrollY / 1000) * 360;
+      setRotation(newRotation);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
     <div>
@@ -54,11 +70,16 @@ export default function Home() {
           <TypingAnimation />
         </main>
 
-        <div className="w-55 p-2 ml-4 inline absolute bottom-0 left-0 ">
+        <div className="w-60 p-4 ml-4 inline absolute bottom-0 left-0 ">
           <p className="font-jetbrains">CRIATIVE AND DEVELOPMENT TO TECH AND CULTURAL CHANGEMAKING</p>
         </div>
 
-        <div className="md:w-20 md:h-20 h-18 w-18 cursor-pointer text-[#FBF4E6] font-jetbrains absolute bottom-5 right-5 rounded-full bg-[#404cd6] text-center"> <p className="p-4">LETS,<br />TALK</p> </div>
+        <div
+          className="md:w-20 md:h-20 h-15 w-15 cursor-pointer text-[#FBF4E6] font-jetbrains fixed bottom-5 right-5 rounded-full bg-[#404cd6] text-center transition-transform duration-100 z-40"
+          style={{ transform: `rotate(${rotation}deg)` }}
+        >
+          <p className="p-2.5 text-sm md:p-5 md:text-md">LETS,<br />TALK</p>
+        </div>
 
 
       </section>
@@ -134,10 +155,10 @@ export default function Home() {
         </div>
 
         <div className="text-center md:text-left border-t border-gray-800 pt-10 flex flex-col md:flex-row justify-between items-center">
-          <div className="border-r border-gray-800 h-full p-12 w-1">
-            <h1 className="text-5xl md:text-[8rem] font-silkscreen leading-none mb-8 md:mb-0">JAVAD</h1>
+          <div className="md:border-r border-b border-gray-800 h-full md:p-12 p-6 w-3/4 text-center ">
+            <h1 className="text-4xl md:text-[8rem] font-silkscreen md:mb-0">JAVAD</h1>
           </div>
-          <div className="flex items-center justify-center text-center w-1/2">
+          <div className="flex items-center justify-center text-center md:w-1/4 w-full pt-6 md:pt-0">
             <p className="font-jetbrains text-sm text-gray-500">© 2025 Maid by my self</p>
           </div>
         </div>
