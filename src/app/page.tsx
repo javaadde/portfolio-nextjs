@@ -59,16 +59,16 @@ export default function Home() {
         <p className="font-jetbrains">CRIATIVE AND DEVELOPMENT TO TECH AND CULTURAL CHANGEMAKING</p>
       </div>
 
-          <div className="md:w-20 md:h-20 h-18 w-18 cursor-pointer font-jetbrains absolute bottom-5 right-5 rounded-full bg-[#404cd6] text-center"> <p className="p-4">LETS,<br/>TALK</p> </div>
+          <div className="md:w-20 md:h-20 h-18 w-18 cursor-pointer text-[#FBF4E6] font-jetbrains absolute bottom-5 right-5 rounded-full bg-[#404cd6] text-center"> <p className="p-4">LETS,<br/>TALK</p> </div>
 
 
      </section>
 
 
 
-     <section className="h-screen w-full flex md:flex-row flex-col md:items-center justify-center">
+     <section className="h-screen w-full flex flex-col justify-center">
 
-      <main className="md:p-12 p-8 md:pl-15 md:pt-15  flex md:flex-row  flex-col md:items-center justify-center">
+      <main className="md:p-12 p-8 md:pl-15 md:pt-15 flex md:items-center max-md:flex-col md:justify-normal justify-center">
         <h1 className="md:text-9xl font-grotesk text-5xl">
           Building <br /> with <br /> Purpose
         </h1>
@@ -76,7 +76,7 @@ export default function Home() {
       </main>
  
        <div className="md:px-12 px-8 mt-8 ">
-          <Link href="#" className="font-jetbrains px-22 py-3 rounded-full bg-[#404CD6] ">
+          <Link href="#" className="font-jetbrains px-22 py-3 rounded-full text-[#FBF4E6] bg-[#404CD6] ">
              About&nbsp;Me&nbsp;&rarr; 
           </Link>
        </div>
@@ -84,10 +84,10 @@ export default function Home() {
      </section>
 
 
-     <section >
-      <SlidingSkills />
-     </section>
-
+ 
+      <section className="h-screen w-full bg-[#FBF4E6]">
+       <SlidingSkills />
+      </section>
 
     </div>
   );
