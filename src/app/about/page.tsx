@@ -96,7 +96,7 @@ export default function About() {
                 </div>
             </section>
 
-            <footer className="py-20 px-6 md:px-12 bg-black text-[#FBF4E6]">
+            <footer className="py-20 px-6 md:px-12 bg-black">
                 <div className="flex flex-col md:flex-row justify-center md:items-end mb-20 md:gap-30 gap-10">
                     <div className="flex gap-5">
                         <div className="flex flex-col gap-2">
