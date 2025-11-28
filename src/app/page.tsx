@@ -1,15 +1,17 @@
 'use client';
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import TypingAnimation from "@/components/TypingText";
 import Link from "next/link";
 import SlidingSkills from "@/components/SlidingSkills";
+import CursorImageTrail from "@/components/MouseMoveAnimation";
 
 export default function Home() {
 
 
   const [openNav, setOpenNav] = useState(false);
   const [rotation, setRotation] = useState(0);
+  const sectionRef = useRef<HTMLElement | null>(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -29,7 +31,8 @@ export default function Home() {
   return (
     <div>
 
-      <section className="h-screen w-full relative">
+      <section ref={sectionRef} className="h-screen w-full relative overflow-hidden">
+
 
 
         <div className={`fixed text-[#FBF4E6] top-0 left-0 h-screen w-full bg-[#404CD6] shadow-2xl z-50 md:hidden transform transition-transform duration-300 ease-in-out ${openNav ? 'translate-x-0' : 'translate-x-full'
@@ -81,12 +84,16 @@ export default function Home() {
           <p className="p-2.5 text-sm md:p-5 md:text-md">LETS,<br />TALK</p>
         </div>
 
+        {sectionRef.current && <CursorImageTrail containerRef={sectionRef} />}
 
       </section>
 
 
 
       <section className="h-screen w-full flex flex-col justify-center">
+
+
+
 
         <main className="md:p-12 p-8 md:pl-15 md:pt-15 flex md:items-center max-md:flex-col md:justify-normal justify-center">
           <h1 className="md:text-9xl font-grotesk text-5xl">
