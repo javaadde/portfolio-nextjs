@@ -20,11 +20,37 @@ const CursorImageTrail: React.FC<CursorImageTrailProps> = ({ containerRef }) => 
 
   // Sample images using SVG data URLs (guaranteed to work)
   const images = [
-    `data:image/svg+xml,${encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200"><rect width="200" height="200" fill="#FF6B6B"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="24" fill="white" font-family="Arial">Design</text></svg>')}`,
-    `data:image/svg+xml,${encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200"><rect width="200" height="200" fill="#4ECDC4"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="24" fill="white" font-family="Arial">Creative</text></svg>')}`,
-    `data:image/svg+xml,${encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200"><rect width="200" height="200" fill="#FFE66D"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="24" fill="#333" font-family="Arial">Brand</text></svg>')}`,
-    `data:image/svg+xml,${encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200"><rect width="200" height="200" fill="#95E1D3"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="24" fill="white" font-family="Arial">Dev</text></svg>')}`,
-    `data:image/svg+xml,${encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200"><rect width="200" height="200" fill="#F38181"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="24" fill="white" font-family="Arial">Studio</text></svg>')}`,
+    '/3d/1.webp',
+    '/3d/2.webp',
+    '/3d/3.webp',
+    '/3d/4.webp',
+    '/3d/5.webp',
+    '/3d/6.webp',
+    '/3d/7.webp',
+    '/3d/8.webp',
+    '/3d/9.webp',
+    '/3d/10.webp',
+    '/3d/11.webp',
+    '/3d/12.webp',
+    '/3d/13.webp',
+    '/3d/14.webp',
+    '/3d/15.webp',
+    '/3d/16.webp',
+    '/3d/17.webp',
+    '/3d/18.webp',
+    '/3d/19.webp',
+    '/3d/20.webp',
+    '/3d/21.webp',
+    '/3d/22.webp',
+    '/3d/23.webp',
+    '/3d/24.webp',
+    '/3d/25.webp',
+    '/3d/26.webp',
+    '/3d/27.webp',
+    '/3d/28.webp',
+    '/3d/29.webp',
+    '/3d/30.webp',
+    '/3d/33.webp',
   ];
 
   useEffect(() => {
@@ -96,7 +122,7 @@ const CursorImageTrail: React.FC<CursorImageTrailProps> = ({ containerRef }) => 
           <img
             src={trail.image}
             alt="Trail"
-            className="w-32 h-32 object-cover rounded-lg shadow-2xl"
+            className="w-32 h-32 object-contain rounded-lg shadow-2xl"
             style={{
               filter: 'brightness(0.9) contrast(1.1)',
             }}

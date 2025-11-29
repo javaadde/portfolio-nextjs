@@ -68,7 +68,7 @@ export default function Home() {
 
 
         <main className="flex flex-col items-center justify-center mt-20">
-          <h1 className="md:text-9xl text-6xl font-silkscreen">JAVAD</h1>
+          <h1 className="md:text-9xl text-6xl font-silkscreen relative z-30">JAVAD</h1>
 
           <TypingAnimation />
         </main>
