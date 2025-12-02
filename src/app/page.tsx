@@ -42,10 +42,10 @@ export default function Home() {
           <span onClick={() => { setOpenNav(false) }} className="text-2xl block text-center py-4 font-grotesk">Close</span>
           <h1 className="mt-10 text-center text-6xl font-silkscreen">JAVAD</h1>
           <ul className="font-grotesk mt-20 gap-5 flex items-center flex-col justify-center">
-            <li className="text-2xl font-semibold cursor-pointer">Home</li>
-            <li className="text-2xl font-semibold cursor-pointer">About</li>
-            <li className="text-2xl font-semibold cursor-pointer">Projects</li>
-            <li className="text-2xl font-semibold cursor-pointer">Contact</li>
+            <li><Link href="/" className="text-2xl font-semibold cursor-pointer">Home</Link></li>
+            <li><Link href="/about" className="text-2xl font-semibold cursor-pointer">About</Link></li>
+            <li><Link href="/projects" className="text-2xl font-semibold cursor-pointer">Projects</Link></li>
+            <li><Link href="/contact" className="text-2xl font-semibold cursor-pointer">Contact</Link></li>
           </ul>
 
           <div className="w-full pb-5 absolute bottom-0 flex justify-center">
@@ -56,10 +56,10 @@ export default function Home() {
 
         <nav className="text-center p-4">
           <ul className="hidden md:flex items-center px-15 justify-between font-grotesk font-normal">
-            <li className="text-lg font-semibold cursor-pointer">Home</li>
-            <li className="text-lg font-semibold cursor-pointer">About</li>
-            <li className="text-lg font-semibold cursor-pointer">Projects</li>
-            <li className="text-lg font-semibold cursor-pointer">Contact</li>
+            <li><Link href="/" className="text-lg font-semibold cursor-pointer">Home</Link></li>
+            <li><Link href="/about" className="text-lg font-semibold cursor-pointer">About</Link></li>
+            <li><Link href="/projects" className="text-lg font-semibold cursor-pointer">Projects</Link></li>
+            <li><Link href="/contact" className="text-lg font-semibold cursor-pointer">Contact</Link></li>
           </ul>
 
           <span onClick={() => { setOpenNav(true) }} className="text-2xl md:hidden font-semibold font-grotesk">Menue</span>
