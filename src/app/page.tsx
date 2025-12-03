@@ -68,21 +68,23 @@ export default function Home() {
 
 
         <main className="flex flex-col items-center justify-center mt-20">
-          <h1 className="md:text-9xl text-6xl font-silkscreen relative z-30">JAVAD</h1>
+          <h1 className="md:text-9xl text-6xl font-silkscreen relative z-30">Javad</h1>
 
           <TypingAnimation />
         </main>
 
-        <div className="w-50 md:w-60 p-4 ml-4 inline absolute text-xs md:text-md bottom-0 left-0 ">
+        <div className="w-60 p-4 ml-4 inline absolute text-base md:text-md bottom-0 left-0 ">
           <p className="font-jetbrains">CRIATIVE AND DEVELOPMENT TO TECH AND CULTURAL CHANGEMAKING</p>
         </div>
 
-        <div
-          className="md:w-20 md:h-20 h-15 w-15 cursor-pointer text-[#FBF4E6] font-jetbrains fixed bottom-5 right-5 rounded-full bg-[#404cd6] text-center transition-transform duration-100 z-40"
-          style={{ transform: `rotate(${rotation}deg)` }}
-        >
-          <p className="p-2.5 text-sm md:p-5 md:text-md">LETS,<br />TALK</p>
-        </div>
+        <Link href="/contact">
+          <div
+            className="md:w-20 md:h-20 h-15 w-15 cursor-pointer text-[#FBF4E6] font-jetbrains fixed bottom-5 right-5 rounded-full bg-[#404cd6] text-center transition-transform duration-100 z-40"
+            style={{ transform: `rotate(${rotation}deg)` }}
+          >
+            <p className="p-2.5 text-sm md:p-5 md:text-md">LETS,<br />TALK</p>
+          </div>
+        </Link>
 
         {sectionRef.current && <CursorImageTrail containerRef={sectionRef} />}
 
@@ -103,8 +105,8 @@ export default function Home() {
         </main>
 
         <div className="md:px-12 px-8 mt-8 ">
-          <Link href="#" className="font-jetbrains px-22 py-3 rounded-full text-[#FBF4E6] bg-[#404CD6] ">
-            About&nbsp;Me&nbsp;&rarr;
+          <Link href="/about" className="font-jetbrains px-22 py-3 rounded-full text-[#FBF4E6] bg-[#404CD6] ">
+            About&nbsp;Me&nbsp;&#10132;
           </Link>
         </div>
 
@@ -122,7 +124,7 @@ export default function Home() {
             className="relative inline-block py-2 px-12 cursor-pointer font-jetbrains text-[#404CD6] border-2 border-[#404CD6] rounded-full overflow-hidden z-10 before:content-[''] before:absolute before:left-0 before:top-0 before:w-full before:h-full before:bg-[#404CD6] before:-translate-x-full before:transition-all before:duration-400 before:-z-10 hover:before:translate-x-0 hover:text-[#FBF4E6] duration-300"
           >
             <button >
-              MY PROJECTS &rarr;
+              MY PROJECTS &#10132;
             </button>
           </Link>
         </div>

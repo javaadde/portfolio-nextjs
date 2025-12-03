@@ -22,7 +22,7 @@ export default function TypingAnimation() {
   return (
     <div className="flex items-center justify-center mt-20">
       <div className="text-center">
-        <pre className="text-xs md:text-md leading-tight whitespace-pre-wrap">
+        <pre className="text-base md:text-md leading-tight whitespace-pre-wrap">
           {displayedText}
           <span className="">|</span>
         </pre>

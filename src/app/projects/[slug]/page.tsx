@@ -44,7 +44,8 @@ export default function ProjectDetail() {
                     onClick={() => router.back()}
                     className="mb-8 flex items-center gap-2 text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors font-jetbrains"
                 >
-                    ← Back to Projects
+                    <span className="rotate-180">&#10132;</span>
+                    Back to Projects
                 </button>
 
                 {/* Project Header */}
@@ -80,7 +81,7 @@ export default function ProjectDetail() {
                             rel="noopener noreferrer"
                             className="px-8 py-3 bg-black dark:bg-white text-white dark:text-black rounded-full font-jetbrains hover:scale-105 transition-transform"
                         >
-                            View Live Demo →
+                            View Live Demo &#10132;
                         </a>
                     )}
                     {project.githubUrl && (
@@ -90,7 +91,7 @@ export default function ProjectDetail() {
                             rel="noopener noreferrer"
                             className="px-8 py-3 border-2 border-black dark:border-white rounded-full font-jetbrains hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-all"
                         >
-                            View on GitHub →
+                            View on GitHub &#10132;
                         </a>
                     )}
                 </div>

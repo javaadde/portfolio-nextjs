@@ -47,8 +47,8 @@ export default function About() {
                 <ul className="font-grotesk mt-20 gap-5 flex items-center flex-col justify-center">
                     <li className="text-2xl font-semibold cursor-pointer"><Link href="/">Home</Link></li>
                     <li className="text-2xl font-semibold cursor-pointer"><Link href="/about">About</Link></li>
-                    <li className="text-2xl font-semibold cursor-pointer">Projects</li>
-                    <li className="text-2xl font-semibold cursor-pointer">Contact</li>
+                    <li className="text-2xl font-semibold cursor-pointer"><Link href="/projects">Projects</Link></li>
+                    <li className="text-2xl font-semibold cursor-pointer"><Link href="/contact">Contact</Link></li>
                 </ul>
                 <div className="w-full pb-5 absolute bottom-0 flex justify-center">
                     <div className="h-18 w-18 cursor-pointer font-jetbrains rounded-full bg-[#FBF4E6] text-center">
@@ -61,8 +61,8 @@ export default function About() {
                 <ul className="hidden md:flex items-center px-15 justify-between font-grotesk font-normal">
                     <li className="text-lg font-semibold cursor-pointer"><Link href="/">Home</Link></li>
                     <li className="text-lg font-semibold cursor-pointer"><Link href="/about">About</Link></li>
-                    <li className="text-lg font-semibold cursor-pointer">Projects</li>
-                    <li className="text-lg font-semibold cursor-pointer">Contact</li>
+                    <li className="text-lg font-semibold cursor-pointer"><Link href="/projects">Projects</Link></li>
+                    <li className="text-lg font-semibold cursor-pointer"><Link href="/contact">Contact</Link></li>
                 </ul>
                 <span onClick={() => setOpenNav(true)} className="text-2xl md:hidden font-semibold font-grotesk cursor-pointer">Menue</span>
             </nav>
@@ -79,8 +79,8 @@ export default function About() {
             </section>
 
             <section className="w-full bg-[#FBF4E6] py-20 px-6 md:px-12">
-                <h2 className="text-4xl md:text-6xl font-bold font-grotesk text-black mb-8 text-center">what i do</h2>
                 <div className="relative">
+                    <h2 className="text-4xl md:text-6xl font-bold font-grotesk text-black mb-8 text-center">what i do</h2>
                     {cards.map((card, index) => (
                         <div key={index} className="h-screen flex items-center justify-center sticky top-0" style={{ zIndex: 10 + index }}>
                             <div className="w-full md:w-3/4" style={{ transform: `translateY(${index * 20}px)` }}>

@@ -85,9 +85,9 @@ export default function Projects() {
                 <div className="w-full flex flex-col mb-10">
 
 
-                    <div className="h-[70vh] flex flex-col justify-between">
+                    <div className="h-[60vh] flex flex-col justify-between">
 
-                        <h1 className="text-5xl md:text-8xl mb-8 md:pl-10 pl-5 font-grotesk">My projects</h1>
+                        <h1 className="text-5xl md:text-8xl mb-8 md:pl-10 p-5 font-grotesk">My projects</h1>
 
                         {/* Marquee below header - Project Images */}
                         <div className="w-full h-32  overflow-hidden relative flex items-center">
@@ -181,7 +181,7 @@ export default function Projects() {
                                         <span className="font-jetbrains text-[10px] md:text-sm text-gray-400 dark:text-gray-500">Rate: {project.rating}</span>
                                     </div>
                                     <div className="w-8 h-8 md:w-14 md:h-14 rounded-full border border-black/30 dark:border-white/40 flex items-center justify-center group-hover:bg-black group-hover:text-[#FBF4E6] dark:group-hover:bg-white dark:group-hover:text-black transition-all duration-300">
-                                        <span className="text-sm md:text-2xl transform -rotate-45 group-hover:rotate-0 transition-transform duration-300">🡲</span>
+                                        <span className="text-sm md:text-2xl transform -rotate-45 group-hover:rotate-0 transition-transform duration-300">&#10132;</span>
                                     </div>
                                 </div>
                             </Link>
