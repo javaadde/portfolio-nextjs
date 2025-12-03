@@ -118,7 +118,7 @@ export default function SlidingSkills() {
         }
       `}</style>
 
-      <div className="w-full h-22 border-b-2 border-b-white overflow-hidden relative flex items-center" style={{ backgroundColor: '#FBF4E6' }}>
+      <div className="w-full h-22 border-y-2 border-y-white overflow-hidden relative flex items-center" style={{ backgroundColor: '#FBF4E6' }}>
         {/* Gradient overlays */}
         <div className="absolute left-0 top-0 bottom-0 w-32 z-10" style={{ background: 'linear-gradient(to right, #FBF4E6, transparent)' }}></div>
         <div className="absolute right-0 top-0 bottom-0 w-32 z-10" style={{ background: 'linear-gradient(to left, #FBF4E6, transparent)' }}></div>
@@ -130,14 +130,13 @@ export default function SlidingSkills() {
             {skillIcons.map((skill, idx) => (
               <div
                 key={`skill-first-${idx}`}
-                className="flex items-center gap-2"
+                className="flex items-center justify-center"
                 title={skill.name}
               >
-                <span className="text-lg font-semibold text-gray-800 whitespace-nowrap">{skill.name}</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox={skill.viewBox}
-                  className="w-8 h-8"
+                  className="w-12 h-12"
                 >
                   {skill.paths.map((path, pIdx) => (
                     <path key={pIdx} d={path.d} fill={path.fill} />
@@ -151,14 +150,13 @@ export default function SlidingSkills() {
             {skillIcons.map((skill, idx) => (
               <div
                 key={`skill-second-${idx}`}
-                className="flex items-center gap-2"
+                className="flex items-center justify-center"
                 title={skill.name}
               >
-                <span className="text-lg font-semibold text-gray-800 whitespace-nowrap">{skill.name}</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox={skill.viewBox}
-                  className="w-8 h-8"
+                  className="w-12 h-12"
                 >
                   {skill.paths.map((path, pIdx) => (
                     <path key={pIdx} d={path.d} fill={path.fill} />

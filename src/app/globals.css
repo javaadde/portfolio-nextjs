@@ -14,9 +14,10 @@
   --font-mono: var(--font-geist-mono);
 }
 
- @font-face {
-        font-family: 'sharp-grotesk'; /* Choose a name for your font family */
-        src: url('../fonts/sharp-grotesk.otf') 
+@font-face {
+  font-family: 'sharp-grotesk';
+  /* Choose a name for your font family */
+  src: url('../fonts/sharp-grotesk.otf')
 }
 
 @media (prefers-color-scheme: dark) {
@@ -31,13 +32,34 @@ body {
   color: var(--foreground);
 }
 
-.font-grotesk{
+.font-grotesk {
   font-family: 'sharp-grotesk';
 }
+
 .font-silkscreen {
   font-family: "Silkscreen", sans-serif;
   font-weight: 600;
 }
-.font-jetbrains{
+
+.font-jetbrains {
   font-family: "JetBrains Mono", monospace;
+}
+
+/* Marquee Animation */
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-slide {
+  animation: slide 20s linear infinite;
+}
+
+.animate-slide:hover {
+  animation-play-state: paused;
 }

@@ -83,7 +83,7 @@ export default function About() {
                 <div className="relative">
                     {cards.map((card, index) => (
                         <div key={index} className="h-screen flex items-center justify-center sticky top-0" style={{ zIndex: 10 + index }}>
-                            <div className="w-full md:w-[500px]" style={{ transform: `translateY(${index * 20}px)` }}>
+                            <div className="w-full md:w-3/4" style={{ transform: `translateY(${index * 20}px)` }}>
                                 <div className="relative">
                                     {/* <div className={`${card.topColor} h-8 md:h-10 rounded-t-3xl`}></div> */}
                                     <div className={`${card.bgColor} rounded-2xl p-12 md:p-16 flex items-center justify-center min-h-[200px] md:min-h-[250px]`}>
@@ -96,40 +96,6 @@ export default function About() {
                 </div>
             </section>
 
-            <footer className="py-20 px-6 md:px-12 bg-black">
-                <div className="flex flex-col md:flex-row justify-center md:items-end mb-20 md:gap-30 gap-10">
-                    <div className="flex gap-5">
-                        <div className="flex flex-col gap-2">
-                            <h3 className="font-jetbrains text-gray-500 mb-2 rotate-180 [writing-mode:vertical-lr]">sections</h3>
-                        </div>
-                        <ul className="font-jetbrains text-xl flex flex-col gap-2">
-                            <li className="hover:text-[#404CD6] cursor-pointer"><Link href="/about">About</Link></li>
-                            <li className="hover:text-[#404CD6] cursor-pointer">Work</li>
-                            <li className="hover:text-[#404CD6] cursor-pointer">Journal</li>
-                            <li className="hover:text-[#404CD6] cursor-pointer">Contact</li>
-                        </ul>
-                    </div>
-                    <div className="flex gap-5">
-                        <div className="flex flex-col gap-2">
-                            <h3 className="font-jetbrains text-gray-500 mb-2 rotate-180 [writing-mode:vertical-lr]">socials</h3>
-                        </div>
-                        <ul className="font-jetbrains text-xl flex flex-col gap-2">
-                            <li className="hover:text-[#404CD6] cursor-pointer">LinkedIn</li>
-                            <li className="hover:text-[#404CD6] cursor-pointer">Dribbble</li>
-                            <li className="hover:text-[#404CD6] cursor-pointer">Behance</li>
-                            <li className="hover:text-[#404CD6] cursor-pointer">Instagram</li>
-                        </ul>
-                    </div>
-                </div>
-                <div className="text-center md:text-left border-t border-gray-800 pt-10 flex flex-col md:flex-row justify-between items-center">
-                    <div className="md:border-r md:border-b-0 border-b border-gray-800 h-full md:p-12 p-6 w-3/4 text-center">
-                        <h1 className="text-4xl md:text-[8rem] font-silkscreen md:mb-0">JAVAD</h1>
-                    </div>
-                    <div className="flex items-center justify-center text-center md:w-1/4 w-full pt-6 md:pt-0">
-                        <p className="font-jetbrains text-sm text-gray-500">© 2025 Made by my self</p>
-                    </div>
-                </div>
-            </footer>
         </div>
     );
 }

@@ -122,7 +122,7 @@ const CursorImageTrail: React.FC<CursorImageTrailProps> = ({ containerRef }) => 
           <img
             src={trail.image}
             alt="Trail"
-            className="w-32 h-32 object-contain rounded-lg shadow-2xl"
+            className="w-40 h-40 object-contain"
             style={{
               filter: 'brightness(0.9) contrast(1.1)',
             }}
