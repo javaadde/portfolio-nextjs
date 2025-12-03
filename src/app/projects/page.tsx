@@ -64,7 +64,9 @@ export default function Projects() {
 
                 <div className="w-full pb-5 absolute bottom-0 flex justify-center">
 
-                    <div className="h-18 w-18 cursor-pointer font-jetbrains  rounded-full bg-[#FBF4E6] text-center"> <p className="p-4 text-[#404CD6]">LETS,<br />TALK</p> </div>
+                    <Link href="/contact">
+                        <div className="h-18 w-18 cursor-pointer font-jetbrains  rounded-full bg-[#FBF4E6] text-center"> <p className="p-4 text-[#404CD6]">LETS,<br />TALK</p> </div>
+                    </Link>
                 </div >
             </div>
 
