@@ -33,43 +33,43 @@ export const projects: Project[] = [
         ]
     },
     {
-        id: 2,
-        name: "Portfolio V1",
-        slug: "portfolio-v1",
-        category: "Personal",
-        rating: "4.9",
-        image: "/3d/2.webp",
-        description: "My first portfolio website showcasing my projects and skills with a clean, minimalist design.",
-        technologies: ["React", "CSS3", "JavaScript", "Framer Motion"],
-        githubUrl: "https://github.com/yourusername/portfolio-v1",
-        demoUrl: "https://portfolio-v1.vercel.app",
+        id: 5,
+        name: "UIfry design clone",
+        slug: "uifry-design-clone",
+        category: "Design",
+        rating: "8.9",
+        image: "/projects/design-clone2.png",
+        description: "A Fully-Responsive Landing page desing of panto which is cloned for purpose of studying",
+        technologies: ["html", "javaScript", "tailwindcss",],
+        githubUrl: "https://github.com/javaadde/FigmaDesign",
+        demoUrl: "https://javaadde.github.io/FigmaDesign/one/design.html",
         features: [
-            "Smooth animations and transitions",
-            "Project showcase gallery",
-            "Contact form integration",
-            "Dark mode support",
-            "Fully responsive layout"
+            "User authentication and profiles",
+            "Post creation with media upload",
+            "Real-time chat messaging",
+            "Like, comment, and share functionality",
+            "Follow/unfollow system"
         ]
     },
-    {
-        id: 3,
-        name: "Task Manager App",
-        slug: "task-manager-app",
-        category: "Productivity",
-        rating: "4.8",
-        image: "/3d/3.webp",
-        description: "A comprehensive task management application with drag-and-drop functionality, team collaboration, and deadline tracking.",
-        technologies: ["React", "Node.js", "Express", "PostgreSQL", "Socket.io"],
-        githubUrl: "https://github.com/yourusername/task-manager",
-        demoUrl: "https://task-manager-demo.vercel.app",
-        features: [
-            "Drag-and-drop task organization",
-            "Real-time collaboration",
-            "Priority and deadline management",
-            "Team workspaces",
-            "Progress tracking and analytics"
-        ]
-    },
+    // {
+    //     id: 3,
+    //     name: "Task Manager App",
+    //     slug: "task-manager-app",
+    //     category: "Productivity",
+    //     rating: "4.8",
+    //     image: "/3d/3.webp",
+    //     description: "A comprehensive task management application with drag-and-drop functionality, team collaboration, and deadline tracking.",
+    //     technologies: ["React", "Node.js", "Express", "PostgreSQL", "Socket.io"],
+    //     githubUrl: "https://github.com/yourusername/task-manager",
+    //     demoUrl: "https://task-manager-demo.vercel.app",
+    //     features: [
+    //         "Drag-and-drop task organization",
+    //         "Real-time collaboration",
+    //         "Priority and deadline management",
+    //         "Team workspaces",
+    //         "Progress tracking and analytics"
+    //     ]
+    // },
     {
         id: 4,
         name: "Viewly",
@@ -99,7 +99,7 @@ export const projects: Project[] = [
         description: "A Fully-Responsive Landing page desing of panto which is cloned for purpose of studying",
         technologies: ["html", "javaScript", "tailwindcss",],
         githubUrl: "https://github.com/javaadde/FigmaDesign",
-        demoUrl: "https://javaadde.github.io/FigmaDesign/one/design.html",
+        demoUrl: "https://javaadde.github.io/FigmaDesign/two/design.html",
         features: [
             "User authentication and profiles",
             "Post creation with media upload",

@@ -67,14 +67,16 @@ export default function About() {
                 <span onClick={() => setOpenNav(true)} className="text-2xl md:hidden font-semibold font-grotesk cursor-pointer">Menue</span>
             </nav>
 
-            <div className="md:w-20 md:h-20 h-15 w-15 cursor-pointer text-[#FBF4E6] font-jetbrains fixed bottom-5 right-5 rounded-full bg-[#404cd6] text-center transition-transform duration-100 z-40" style={{ transform: `rotate(${rotation}deg)` }}>
-                <p className="p-2.5 text-sm md:p-5 md:text-md">LETS,<br />TALK</p>
-            </div>
+            <Link href="/contact">
+                <div className="md:w-20 md:h-20 h-15 w-15 cursor-pointer text-[#FBF4E6] font-jetbrains fixed bottom-5 right-5 rounded-full bg-[#404cd6] text-center transition-transform duration-100 z-40" style={{ transform: `rotate(${rotation}deg)` }}>
+                    <p className="p-2.5 text-sm md:p-5 md:text-md">LETS,<br />TALK</p>
+                </div>
+            </Link>
 
             <section className="min-h-screen w-full flex flex-col justify-center px-6 md:px-12 py-20">
                 <h1 className="text-5xl md:text-8xl font-bold font-grotesk mb-8">About Me</h1>
                 <p className="text-lg md:text-xl font-jetbrains max-w-2xl leading-relaxed">
-                    We are a design-led, digital-first agency. A small core team, intertwined with a network of elite collaborators. We are innovative businesses, open-minded partners who embrace the opportunities that change offers.
+                    I’m a MERN Stack Developer passionate about building responsive and scalable web applications. I love turning ideas into functional, user-friendly products using MongoDB, Express.js, React, and Node.js, along with strong JavaScript and Git skills
                 </p>
             </section>
 
