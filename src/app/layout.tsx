@@ -15,6 +15,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "javadde",
   description: "portfolio website javad vadakkangara",
+   manifest: "/manifest.json",
 };
 
 export default function RootLayout({
