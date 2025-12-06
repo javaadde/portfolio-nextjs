@@ -33,45 +33,25 @@ export const projects: Project[] = [
         ]
     },
     {
-        id: 5,
-        name: "UIfry design clone",
-        slug: "uifry-design-clone",
-        category: "Design",
-        rating: "8.9",
-        image: "/projects/design-clone2.png",
-        description: "A Fully-Responsive Landing page desing of panto which is cloned for purpose of studying",
-        technologies: ["html", "javaScript", "tailwindcss",],
-        githubUrl: "https://github.com/javaadde/FigmaDesign",
-        demoUrl: "https://javaadde.github.io/FigmaDesign/one/design.html",
+        id: 2,
+        name: "GitHub Contribution Widget",
+        slug: "github-contribution-widget",
+        category: "Desktop App",
+        rating: "9.2",
+        image: "/projects/github-widget.png",
+        description: "A customizable desktop widget that displays GitHub contribution graphs. Built with Electron for cross-platform compatibility and auto-start on system boot.",
+        technologies: ["Electron", "TypeScript", "HTML", "CSS"],
+        githubUrl: "https://github.com/javaadde",
         features: [
-            "User authentication and profiles",
-            "Post creation with media upload",
-            "Real-time chat messaging",
-            "Like, comment, and share functionality",
-            "Follow/unfollow system"
+            "Change GitHub username in settings",
+            "Adjustable widget size",
+            "Auto-start on system boot",
+            "Draggable widget interface",
+            "Real-time contribution graph updates"
         ]
     },
-    // {
-    //     id: 3,
-    //     name: "Task Manager App",
-    //     slug: "task-manager-app",
-    //     category: "Productivity",
-    //     rating: "4.8",
-    //     image: "/3d/3.webp",
-    //     description: "A comprehensive task management application with drag-and-drop functionality, team collaboration, and deadline tracking.",
-    //     technologies: ["React", "Node.js", "Express", "PostgreSQL", "Socket.io"],
-    //     githubUrl: "https://github.com/yourusername/task-manager",
-    //     demoUrl: "https://task-manager-demo.vercel.app",
-    //     features: [
-    //         "Drag-and-drop task organization",
-    //         "Real-time collaboration",
-    //         "Priority and deadline management",
-    //         "Team workspaces",
-    //         "Progress tracking and analytics"
-    //     ]
-    // },
     {
-        id: 4,
+        id: 3,
         name: "Viewly",
         slug: "viewly",
         category: "Testing",
@@ -90,7 +70,7 @@ export const projects: Project[] = [
         ]
     },
     {
-        id: 5,
+        id: 4,
         name: "Panto-design clone",
         slug: "panto-design-clone",
         category: "Design",
@@ -107,5 +87,25 @@ export const projects: Project[] = [
             "Like, comment, and share functionality",
             "Follow/unfollow system"
         ]
-    }
+    },
+    {
+        id: 5,
+        name: "UIfry design clone",
+        slug: "uifry-design-clone",
+        category: "Design",
+        rating: "8.9",
+        image: "/projects/design-clone2.png",
+        description: "A Fully-Responsive Landing page desing of panto which is cloned for purpose of studying",
+        technologies: ["html", "javaScript", "tailwindcss",],
+        githubUrl: "https://github.com/javaadde/FigmaDesign",
+        demoUrl: "https://javaadde.github.io/FigmaDesign/one/design.html",
+        features: [
+            "User authentication and profiles",
+            "Post creation with media upload",
+            "Real-time chat messaging",
+            "Like, comment, and share functionality",
+            "Follow/unfollow system"
+        ]
+    },
+
 ];
