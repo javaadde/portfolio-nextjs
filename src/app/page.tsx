@@ -38,7 +38,7 @@ export default function Home() {
 
 
           <span onClick={() => { setOpenNav(false) }} className="text-2xl block text-center py-4 font-grotesk">Close</span>
-          <h1 className="mt-10 text-center text-6xl font-silkscreen">JAVAADDE</h1>
+          <h1 className="mt-10 text-center text-6xl font-silkscreen">Javad</h1>
           <ul className="font-grotesk mt-20 gap-5 flex items-center flex-col justify-center">
             <li><Link href="/" className="text-2xl font-semibold cursor-pointer">Home</Link></li>
             <li><Link href="/about" className="text-2xl font-semibold cursor-pointer">About</Link></li>
