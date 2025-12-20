@@ -33,14 +33,12 @@ export default function Home() {
 
       <section ref={sectionRef} className="h-screen w-full relative overflow-hidden">
 
-
-
         <div className={`fixed text-[#FBF4E6] top-0 left-0 h-screen w-full bg-[#404CD6] shadow-2xl z-50 md:hidden transform transition-transform duration-300 ease-in-out ${openNav ? 'translate-x-0' : 'translate-x-full'
           }`}>
 
 
           <span onClick={() => { setOpenNav(false) }} className="text-2xl block text-center py-4 font-grotesk">Close</span>
-          <h1 className="mt-10 text-center text-6xl font-silkscreen">JAVAD</h1>
+          <h1 className="mt-10 text-center text-6xl font-silkscreen">JAVAADDE</h1>
           <ul className="font-grotesk mt-20 gap-5 flex items-center flex-col justify-center">
             <li><Link href="/" className="text-2xl font-semibold cursor-pointer">Home</Link></li>
             <li><Link href="/about" className="text-2xl font-semibold cursor-pointer">About</Link></li>
@@ -62,18 +60,23 @@ export default function Home() {
             <li><Link href="/about" className="text-lg font-semibold cursor-pointer">About</Link></li>
             <li><Link href="/projects" className="text-lg font-semibold cursor-pointer">Projects</Link></li>
             <li><Link href="/contact" className="text-lg font-semibold cursor-pointer">Contact</Link></li>
+            <li><a href="https://github.com/javaadde" target="_blank" rel="noopener noreferrer" className="text-lg font-semibold cursor-pointer">GitHub</a></li>
           </ul>
 
-          <span onClick={() => { setOpenNav(true) }} className="text-2xl md:hidden font-semibold font-grotesk">Menue</span>
+          <span onClick={() => { setOpenNav(true) }} className="text-2xl md:hidden font-semibold font-grotesk">Menu</span>
         </nav>
 
 
 
-        <main className="flex flex-col items-center justify-center mt-20">
-          <h1 className="md:text-9xl text-6xl font-silkscreen relative z-30">Javad</h1>
+        <main className="flex flex-col items-center justify-center mt-20 px-4">
+          <h1 className="md:text-9xl text-5xl font-silkscreen relative z-30 text-center">
+            Javaadde
+            <span className="sr-only"> - MERN Stack Developer Portfolio</span>
+          </h1>
 
           <TypingAnimation />
         </main>
+
 
         <div className="w-60 p-4 ml-4 inline absolute text-base md:text-md bottom-0 left-0 ">
           <p className="font-jetbrains">CRIATIVE AND DEVELOPMENT TO TECH AND CULTURAL CHANGEMAKING</p>

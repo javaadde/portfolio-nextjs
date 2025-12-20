@@ -34,6 +34,7 @@ export default function ProjectDetailClient() {
                     <li><Link href="/about" className="text-lg font-semibold cursor-pointer">About</Link></li>
                     <li><Link href="/projects" className="text-lg font-semibold cursor-pointer">Projects</Link></li>
                     <li><Link href="/contact" className="text-lg font-semibold cursor-pointer">Contact</Link></li>
+                    <li><a href="https://github.com/javaadde" target="_blank" rel="noopener noreferrer" className="text-lg font-semibold cursor-pointer">GitHub</a></li>
                 </ul>
                 <Link href="/projects" className="md:hidden text-2xl font-semibold font-grotesk">← Back</Link>
             </nav>
@@ -65,7 +66,7 @@ export default function ProjectDetailClient() {
                 <div className="relative w-full aspect-video rounded-2xl overflow-hidden shadow-2xl mb-12 border-4 border-white dark:border-gray-800">
                     <Image
                         src={project.image}
-                        alt={project.name}
+                        alt={`Javaadde MERN Stack Project - ${project.name}`}
                         fill
                         className="object-cover"
                         priority

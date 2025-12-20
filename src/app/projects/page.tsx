@@ -76,9 +76,10 @@ export default function Projects() {
                     <li><Link href="/about" className="text-lg font-semibold cursor-pointer">About</Link></li>
                     <li><Link href="/projects" className="text-lg font-semibold cursor-pointer">Projects</Link></li>
                     <li><Link href="/contact" className="text-lg font-semibold cursor-pointer">Contact</Link></li>
+                    <li><a href="https://github.com/javaadde" target="_blank" rel="noopener noreferrer" className="text-lg font-semibold cursor-pointer">GitHub</a></li>
                 </ul>
 
-                <span onClick={() => { setOpenNav(true) }} className="text-2xl md:hidden font-semibold font-grotesk">Menue</span>
+                <span onClick={() => { setOpenNav(true) }} className="text-2xl md:hidden font-semibold font-grotesk">Menu</span>
             </nav>
 
             <main className="flex flex-col items-center w-full pt-10 pb-20">
@@ -108,7 +109,7 @@ export default function Projects() {
                                         >
                                             <Image
                                                 src={project.image}
-                                                alt={project.name}
+                                                alt={`Javaadde MERN Stack Project - ${project.name}`}
                                                 fill
                                                 className="object-cover"
                                             />
@@ -155,7 +156,7 @@ export default function Projects() {
                                 <div className="w-full h-full bg-gray-200 dark:bg-gray-800 rounded-xl overflow-hidden shadow-2xl border-4 border-white dark:border-gray-600 relative">
                                     <Image
                                         src={project.image}
-                                        alt={project.name}
+                                        alt={`Javaadde MERN Stack Project - ${project.name}`}
                                         fill
                                         className="object-cover"
                                     />

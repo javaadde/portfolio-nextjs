@@ -63,6 +63,7 @@ export default function About() {
                     <li className="text-lg font-semibold cursor-pointer"><Link href="/about">About</Link></li>
                     <li className="text-lg font-semibold cursor-pointer"><Link href="/projects">Projects</Link></li>
                     <li className="text-lg font-semibold cursor-pointer"><Link href="/contact">Contact</Link></li>
+                    <li><a href="https://github.com/javaadde" target="_blank" rel="noopener noreferrer" className="text-lg font-semibold cursor-pointer">GitHub</a></li>
                 </ul>
                 <span onClick={() => setOpenNav(true)} className="text-2xl md:hidden font-semibold font-grotesk cursor-pointer">Menue</span>
             </nav>

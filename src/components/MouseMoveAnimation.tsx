@@ -121,7 +121,7 @@ const CursorImageTrail: React.FC<CursorImageTrailProps> = ({ containerRef }) => 
         >
           <img
             src={trail.image}
-            alt="Trail"
+            alt="Javaadde 3D Design Element"
             className="w-40 h-40 object-contain"
             style={{
               filter: 'brightness(0.9) contrast(1.1)',
