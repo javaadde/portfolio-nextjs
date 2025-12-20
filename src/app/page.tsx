@@ -70,8 +70,13 @@ export default function Home() {
 
         <main className="flex flex-col items-center justify-center mt-20 px-4">
           <h1 className="md:text-9xl text-5xl font-silkscreen relative z-30 text-center">
-            Javaadde
+            Javad
             <span className="sr-only"> - MERN Stack Developer Portfolio</span>
+            <span className="sr-only"> - Javaad Developer Portfolio</span>
+            <span className="sr-only"> - Javaad Portfolio</span>
+            <span className="sr-only"> - Javaad </span>
+            <span className="sr-only">Javaad UI-UX Designer</span>
+            <span className="sr-only">Javaad </span>
           </h1>
 
           <TypingAnimation />
