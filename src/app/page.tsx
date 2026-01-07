@@ -108,9 +108,9 @@ export default function Home() {
 
 
         <main className="md:p-12 p-8 md:pl-15 md:pt-15 flex md:items-center max-md:flex-col md:justify-normal justify-center">
-          <h1 className="md:text-9xl font-grotesk text-5xl">
+          <h2 className="md:text-9xl font-grotesk text-5xl">
             Building <br /> with <br /> Purpose
-          </h1>
+          </h2>
           <p className="md:text-xl text-lg md:w-1/2  md:-translate-x-50 mt-10 font-jetbrains">Whether designing UI, prototyping flows, or engineering full-stack apps, I help transform ideas into real products</p>
         </main>
 

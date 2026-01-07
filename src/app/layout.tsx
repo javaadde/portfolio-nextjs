@@ -15,18 +15,21 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Javaadde | Mohammed Javad - MERN Stack Developer Portfolio",
+  title: {
+    template: '%s | Javaadde',
+    default: 'Javaadde | MERN Stack Developer Portfolio',
+  },
   description: "Explore the portfolio of Mohammed Javad (Javaadde), a MERN stack developer specializing in React, Node.js, and 3D design. View my projects and GitHub contributions.",
   keywords: ["Javaadde", "Mohammed Javad", "MERN Stack Developer", "React Developer", "Node.js Developer", "3D Design", "Portfolio"],
-  authors: [{ name: "Mohammed Javad", url: "https://javaadde.vercel.app" }],
+  authors: [{ name: "Mohammed Javad", url: "https://javade.xyz" }],
   manifest: "/manifest.json",
   alternates: {
-    canonical: "https://javaadde.vercel.app",
+    canonical: "https://javade.xyz",
   },
   openGraph: {
     title: "Javaadde | Mohammed Javad - MERN Stack Developer Portfolio",
     description: "Explore the portfolio of Mohammed Javad (Javaadde), a MERN stack developer specializing in React, Node.js, and 3D design.",
-    url: "https://javaadde.vercel.app",
+    url: "https://javade.xyz",
     siteName: "Javaadde Portfolio",
     images: [
       {
@@ -57,11 +60,11 @@ export default function RootLayout({
     "@type": "Person",
     "name": "Mohammed Javad",
     "alternateName": "Javaadde",
-    "url": "https://javaadde.vercel.app",
-    "image": "https://javaadde.vercel.app/logo.png",
+    "url": "https://javade.xyz",
+    "image": "https://javade.xyz/logo.png",
     "sameAs": [
       "https://github.com/javaadde",
-      "https://www.linkedin.com/in/mohammed-javad-v-007137255/",
+      "https://www.linkedin.com/in/javaadde",
       "https://www.behance.net/javaadde",
       "https://sketchfab.com/javaadde",
       "https://www.instagram.com/javaadde_"
