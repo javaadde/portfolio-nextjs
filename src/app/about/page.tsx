@@ -23,17 +23,17 @@ export default function About() {
 
     const cards = [
         {
-            title: 'Build app',
+            title: 'I craft modern, responsive user interfaces for the web',
             bgColor: 'bg-[#7A9D7E]',
             topColor: 'bg-[#5A7D5E]'
         },
         {
-            title: 'and i scale it',
+            title: 'I design and develop efficient backend architectures',
             bgColor: 'bg-[#FF6B5A]',
             topColor: 'bg-[#7A9D7E]'
         },
         {
-            title: 'then deploye it',
+            title: 'I ensure reliable deployment and infrastructure management',
             bgColor: 'bg-[#E8B44C]',
             topColor: 'bg-[#7A9D7E]'
         }
@@ -84,13 +84,14 @@ export default function About() {
             <section className="w-full bg-[#FBF4E6] py-20 px-6 md:px-12">
                 <div className="relative">
                     <h2 className="text-4xl md:text-6xl font-bold font-grotesk text-black mb-8 text-center">what i do</h2>
+                    <div className="h-12" />
                     {cards.map((card, index) => (
                         <div key={index} className="h-screen flex items-center justify-center sticky top-0" style={{ zIndex: 10 + index }}>
                             <div className="w-full md:w-3/4" style={{ transform: `translateY(${index * 20}px)` }}>
                                 <div className="relative">
                                     {/* <div className={`${card.topColor} h-8 md:h-10 rounded-t-3xl`}></div> */}
-                                    <div className={`${card.bgColor} rounded-2xl p-12 md:p-16 flex items-center justify-center min-h-[200px] md:min-h-[250px]`}>
-                                        <h3 className="text-3xl md:text-4xl font-bold font-grotesk text-black text-center">{card.title}</h3>
+                                    <div className={`${card.bgColor} rounded-2xl p-12 md:p-16 flex items-center justify-center min-h-[400px] md:min-h-[450px]`}>
+                                        <h3 className="text-2xl md:text-4xl font-bold font-grotesk text-[#FBF4E6] text-center mb-8">{card.title}</h3>
                                     </div>
                                 </div>
                             </div>
